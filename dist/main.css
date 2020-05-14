@@ -1,30 +1,22 @@
 @font-face {
   font-family: 'Mostwasted';
-  src: url('../../assets/Mostwasted.woff') format('woff');
-}
-
-$gray: #333;
+  src: url(fonts/Mostwasted.woff) format("woff"); }
 
 body {
-  margin: 0;
-
-  * {
-    box-sizing: border-box;
-  }
-}
+  margin: 0; }
+  body * {
+    box-sizing: border-box; }
 
 #root {
-  height: 100vh;
-}
+  height: 100vh; }
 
 h1 {
   margin: 0;
   padding: 100px 0 0;
   font-family: Mostwasted, sans-serif;
   font-size: 60px;
-  color: $gray;
-  text-align: center;
-}
+  color: #333;
+  text-align: center; }
 
 #panda {
   position: relative;
@@ -32,127 +24,97 @@ h1 {
   left: 50%;
   width: 180px;
   height: 165px;
-  background: $gray;
-  border: 8px solid $gray;
+  background: #333;
+  border: 8px solid #333;
   border-radius: 50%;
-  transform: translate(-50%, -50%);
-
-  .ear {
+  transform: translate(-50%, -50%); }
+  #panda .ear {
     position: absolute;
     bottom: 68%;
     width: 65px;
     height: 65px;
-    background: $gray;
-    border-radius: 50%;
-
-    &.right {
-      right: -20px;
-    }
-
-    &.left {
-      left: -20px;
-    }
-  }
-
-  .face {
+    background: #333;
+    border-radius: 50%; }
+    #panda .ear.right {
+      right: -20px; }
+    #panda .ear.left {
+      left: -20px; }
+  #panda .face {
     position: relative;
     width: 100%;
     height: 100%;
     background: white;
     border-radius: 50%;
-    z-index: 1;
-
-    .eye {
+    z-index: 1; }
+    #panda .face .eye {
       position: absolute;
       top: 55%;
       width: 65px;
       height: 32.5px;
-      overflow: hidden;
-
-      &:before {
+      overflow: hidden; }
+      #panda .face .eye:before {
         content: ' ';
         position: absolute;
         bottom: 0;
         left: 0;
         width: 65px;
         height: 65px;
-        background: $gray;
-        border-radius: 50%;
-      }
-
-      &:after {
+        background: #333;
+        border-radius: 50%; }
+      #panda .face .eye:after {
         content: ' ';
         position: absolute;
         left: 50%;
         width: 25px;
         height: 25px;
-        background: $gray;
+        background: #333;
         border: 4px solid white;
         border-radius: 50%;
-        transform: translate(-50%, -50%);
-      }
-
-      &.right {
+        transform: translate(-50%, -50%); }
+      #panda .face .eye.right {
         right: 5px;
-        transform: rotateZ(-22deg);
-      }
-
-      &.left {
+        transform: rotateZ(-22deg); }
+      #panda .face .eye.left {
         left: 5px;
-        transform: rotateZ(22deg);
-      }
-    }
-
-    .nose {
+        transform: rotateZ(22deg); }
+    #panda .face .nose {
       position: absolute;
       top: 65%;
       left: 50%;
       width: 16px;
       height: 8px;
-      background: $gray;
+      background: #333;
       border-radius: 50%;
-      transform: translate(-50%);
-    }
-
-    .mouth {
+      transform: translate(-50%); }
+    #panda .face .mouth {
       position: absolute;
       bottom: 20px;
       left: 50%;
       width: 70px;
       height: 4px;
-      background: $gray;
+      background: #333;
       border-radius: 20% 20% 40% 20%;
-      transform: translate(-50%, 0);
-    }
-  }
-
-  .body {
+      transform: translate(-50%, 0); }
+  #panda .body {
     position: absolute;
     top: 80%;
     left: 50%;
     width: 100px;
     height: 100px;
-    background: $gray;
+    background: #333;
     border-radius: 70% 70% 55% 55%;
-    transform: translate(-50%, 0);
-
-    .arm {
+    transform: translate(-50%, 0); }
+    #panda .body .arm {
       position: absolute;
       width: 40px;
       height: 76px;
-      background: $gray;
-
-      &.right {
+      background: #333; }
+      #panda .body .arm.right {
         right: -15px;
         border-radius: 60% 110% 60% 110%;
-        transform: rotateZ(-20deg);
-      }
-
-      &.left {
+        transform: rotateZ(-20deg); }
+      #panda .body .arm.left {
         left: -15px;
         border-radius: 110% 60% 110% 60%;
-        transform: rotateZ(20deg);
-      }
-    }
-  }
-}
+        transform: rotateZ(20deg); }
+

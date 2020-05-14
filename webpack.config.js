@@ -37,6 +37,18 @@ module.exports = {
       {
         test: /\.hbs$/,
         use: 'handlebars-loader'
+      },
+      {
+        test: /\.woff$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'fonts/'
+            }
+          }
+        ]
       }
     ]
   },
